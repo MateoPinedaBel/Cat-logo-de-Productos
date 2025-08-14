@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrito-contenedor {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+}
+
+.producto-carrito img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.producto-info {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.producto-nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.producto-precio {
+    font-size: 16px;
+    color: #333333;
+}
+
+.producto-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.producto-cantidad button {
+    padding: 4px 8px;
+    border: none;
+    background-color: salmon;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.producto-cantidad button:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+.total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botones-carrito {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+.botones-carrito button {
+    padding: 10px;
+    border: none;
+    background-color: salmon;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.botones-carrito button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+/* computadora */
+@media (min-width: 1024px) {
+    body {
+        background-color: #f5f5dc;
+    }
+
+    .carrito-contenedor {
+        background-color: #add8e6;
+        color: white;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #d0f0c0;
+    }
+
+    .carrito-contenedor {
+        background-color: #32cd32;
+        color: white;
+    }
+}
+
+/* celular */
+@media (max-width: 767px) {
+    body {
+        background-color: #fdf7aa;
+    }
+
+    .carrito-contenedor {
+        background-color: #ffff00;
+        color: black;
+    }
+}
